@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para minha princesa Isadora</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #cceeff, #ffccdd);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 2em;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    button {
+      background: #ff99cc;
+      border: none;
+      color: white;
+      padding: 0.7em 1.5em;
+      font-size: 1.1em;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 1em;
+    }
+    button:hover {
+      background: #ff88bb;
+    }
+    #galeria img {
+      width: 45%;
+      margin: 1em;
+      border: 8px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      transform: rotate(-2deg);
+    }
+    .hidden {
+      display: none;
+    }
+    .heart {
+      position: fixed;
+      color: pink;
+      font-size: 1.2em;
+      animation: fall 6s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Para minha princesa Isadora ❤️</h1>
+    <div id="text"></div>
+    <button id="btnFotos">Clique para ver nossas fotos</button>
+    <div id="galeria" class="hidden">
+      <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1">
+      <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2">
+    </div>
+    <div class="player">
+      <iframe width="320" height="180"
+        src="https://www.youtube.com/embed/8DRJI6Yw5dA?autoplay=1&loop=1&playlist=8DRJI6Yw5dA"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+  </div>  <script>
+    const frases = [
+      "Oi Isa ❤️",
+      "Sempre gostei muito de você e hoje decidi abrir meu coração...",
+      "Todo dia fico imaginando a gente juntinhos, rindo de bobeira...",
+      "Talvez minha mão ficasse meio boba de vez em quando 😅, mas sempre com carinho e respeito.",
+      "Se um dia te magoei, me desculpa... nunca foi minha intenção.",
+      "Você é muito especial pra mim.",
+      "Com carinho, seu Gatao preferido🫣❤️🅱️Ⓜ️"
+    ];
+    let idx = 0, pos = 0;
+    const textEl = document.getElementById('text');
+
+    function typeNext() {
+      if (idx < frases.length) {
+        const linha = frases[idx];
+        if (pos
+           primeiro commit
